@@ -1,0 +1,212 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+.c-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.contact-detail {
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    opacity: 0.5;
+    translate: 0px 50px;
+}
+
+.animation .contact-detail {
+    opacity: 1;
+    translate: 0px 0px;
+}
+
+.contact-detail i {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.contact-detail h3 {
+    color: #caf0f8;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.contact-detail p {
+    color: white;
+    text-align: justify;
+    z-index: 2;
+}
+
+.contact-detail h6 {
+    color: #0077b6;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.contact-detail span {
+    color: #ffffff;
+    position: relative;
+}
+
+.contact-detail img {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.15;
+    width: 300px;
+    transform: rotate(-10deg) skew(10deg);
+    filter: drop-shadow(-10px 10px 1px #ffffff66) blur(2px);
+    animation: contbook 5s linear infinite;
+}
+
+@keyframes contbook {
+
+    0%,
+    100% {
+        transform: translateX(10px) rotate(-15deg) skew(10deg);
+    }
+
+    50% {
+        transform: translateX(-10px) rotate(-25deg) skew(10deg);
+    }
+}
+
+.contact-info .label,
+.contact-info .textarea,
+.contact-info .btn {
+    transition: 0.5s;
+    opacity: 0.5;
+    translate: 0px 50px;
+}
+
+.contact-info .label {
+    transition-delay: 0.1s;
+}
+
+.contact-info .textarea {
+    transition-delay: 0.2s;
+}
+
+.contact-info .btn {
+    transition-delay: 0.3s !important;
+}
+
+.animation .contact-info .label,
+.animation .contact-info .textarea,
+.animation .contact-info .btn {
+    opacity: 1;
+    translate: 0px 0px;
+}
+
+.contact-info form {
+    max-width: 600px;
+    min-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 30px;
+}
+
+.contact-info .label {
+    width: 250px;
+}
+
+.contact-info label {
+    color: #90e0ef;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contact-info input {
+    font-size: smaller;
+    width: 100%;
+    padding: 8px;
+    color: #caf0f8;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #00b4d8;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.contact-info input:hover {
+    background-color: #00b4d825;
+}
+
+.contact-info .textarea {
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-info textarea {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    padding: 8px;
+    outline: none;
+    color: #caf0f8;
+    border: 2px solid #00b4d8;
+    transition: 0.5s;
+    border-radius: 5px;
+    font-size: smaller;
+}
+
+.contact-info textarea:hover {
+    background-color: #00b4d825;
+}
+
+.contact-info .btn {
+    width: 200px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #00b4d8;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.contact-info .btn:hover {
+    background-color: #00b4d8;
+}
+
+@media (max-width:1024px) {
+    .contact {
+        height: fit-content;
+    }
+
+    .c-container {
+        display: flex;
+        padding: 50px 10px;
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-detail {
+        max-width: 400px;
+    }
+
+    .contact-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-detail img {
+        max-width: 250px;
+    }
+
+    .contact-info form {
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,242 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+
+.h-container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.info {
+    flex-basis: 50%;
+    animation: info-an 1s linear;
+    z-index: 6 !important;
+}
+
+@keyframes info-an {
+    0% {
+        opacity: 0;
+        translate: -50px 0;
+    }
+}
+
+.info h1 span {
+    position: relative;
+    font-weight: 700;
+    color: #90e0ef;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.info h1 span:hover {
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+.info h3 span {
+    font-weight: 600;
+    color: #00b4d8;
+    transition: 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+
+.info h3 span:hover {
+    color: #00d5ff;
+}
+
+.info p {
+    max-width: 500px;
+    text-align: justify;
+    color: white;
+}
+
+.info button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #00b4d8;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.info button:hover {
+    background-color: #00b4d8;
+    box-shadow: 0 0 5px #caf0f8;
+}
+
+.navlist-ico ul {
+    margin: 20px 0;
+    padding: 0;
+    color: #00b4d8;
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlist-ico li {
+    transition: 0.5s;
+}
+
+.navlist-ico ul li:hover {
+    color: white;
+}
+
+.info2 {
+    width: fit-content;
+    background-color: #0000005c;
+    border-radius: 39% 61% 40% 60% / 65% 45% 55% 35%;
+    box-shadow: 0 0 30px #0076b649;
+    animation: info-img 10s linear infinite;
+    transition: 1s;
+    z-index: 4;
+    transition: 0.5s;
+
+}
+
+@keyframes info-img {
+
+    0%,
+    100% {
+        border-radius: 39% 61% 40% 60% / 65% 45% 55% 35%;
+    }
+
+    25% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    50% {
+        border-radius: 73% 27% 70% 30% / 30% 72% 28% 70%;
+    }
+
+    75% {
+        border-radius: 54% 46% 57% 43% / 68% 72% 28% 32%;
+    }
+}
+
+.info2 img {
+    width: 350px;
+    box-shadow: 0 0 30px #0076b649;
+    border-radius: 74% 26% 65% 35% / 35% 68% 32% 65%;
+    animation: info2-an 1s 0s linear;
+    transition: 1s;
+}
+
+@keyframes info2-an {
+    0% {
+        opacity: 0;
+    }
+}
+
+.info2:hover img {
+    box-shadow: 0 0 30px #0076b6af;
+}
+
+.info2:hover {
+    box-shadow: 0 0 30px #0076b6af;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: calc(50% - 50px);
+    z-index: 0;
+}
+
+.waves:nth-child(odd) {
+    transform: rotate(180deg);
+    top: calc(50% + 50px);
+}
+
+.wave::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: -20px;
+    background: #0091df00;
+    filter: blur(5px);
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: url(./wave.png);
+    background-size: 1000px 100px;
+    opacity: 0.1;
+    animation: wave 10s linear infinite;
+}
+
+.wave:nth-child(2) {
+    animation-delay: -1.5s;
+    animation: wave 10s linear infinite reverse;
+}
+
+.wave:nth-child(3) {
+    animation-delay: -3s;
+}
+
+@keyframes wave {
+
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@media (max-width:768px) {
+    .info {
+        padding: 0 30px;
+        position: absolute;
+        top: 60%;
+        z-index: 1;
+    }
+
+    .info2 img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width:425px) {
+    .h-container {
+        padding: 0;
+    }
+
+    .info {
+        padding: 0 10px;
+    }
+
+    .info2 img {
+        max-width: 300px;
+    }
+
+    .info h1 {
+        font-size: 22px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .info button {
+        font-size: 12px;
+    }
+}

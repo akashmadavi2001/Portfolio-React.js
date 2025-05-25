@@ -1,0 +1,150 @@
+.background {    
+    overflow-x: hidden;
+    background: linear-gradient(to right, #00001e, #00273c);
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    padding: 0 50px;
+    background: linear-gradient(to right, #00001e, #00273c);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #caf0f8;
+    pointer-events: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.header ul li a:hover {
+    color: #caf0f8;
+}
+
+.header a.active {
+    color: #caf0f8;
+    border-bottom: 2px solid #caf0f8;
+}
+
+.items {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.checkbox,
+.header label {
+    display: none;
+}
+
+@media (max-width:768px) {
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .header label {
+        display: block;
+    }
+
+    /* menubar */
+    .toggle {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+
+    .common {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #caf0f8;
+        transition: 0.5s ease;
+        z-index: 15;
+    }
+
+    .top-line {
+        top: 10%;
+    }
+
+    .middle-line {
+        top: 50%;
+        transform: translate(-50%);
+    }
+
+    .bottom-line {
+        bottom: 5%;
+    }
+
+    .checkbox:checked+.toggle .top-line {
+        transform: rotate(-45deg) translate(-50%);
+    }
+
+    .checkbox:checked+.toggle .middle-line {
+        transform: translate(5px);
+        opacity: 0;
+    }
+
+    .checkbox:checked+.toggle .bottom-line {
+        transform: rotate(45deg) translate(-50%);
+    }
+
+    /* Unorderlist */
+    .listnav {
+        position: absolute;
+        top: 50px;
+        right: -120px;
+        transition: 0.5s;
+    }
+
+    .hidenav {
+        right: 0px;
+    }
+
+    .header ul {
+        width: 120px;
+        height: fit-content;
+        padding-bottom: 20px;
+        background: #00273c39;
+        backdrop-filter: blur(5px);
+        border-radius: 0 0 0 20px;
+        flex-direction: column;
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+}
+
+
+@media (max-width:425px) {
+    .items {
+        padding: 0;
+    }
+}
