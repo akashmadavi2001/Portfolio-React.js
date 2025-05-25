@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio-React.js/static/css/main.0be9d56f.css",
+    "main.js": "/Portfolio-React.js/static/js/main.5147a0aa.js",
+    "static/js/453.235e154e.chunk.js": "/Portfolio-React.js/static/js/453.235e154e.chunk.js",
+    "static/media/Akash.png": "/Portfolio-React.js/static/media/Akash.3d15fadfe725ebdab98f.png",
+    "static/media/project.jpg": "/Portfolio-React.js/static/media/project.2a9ed1400615ad082b3c.jpg",
+    "static/media/akash.JPG": "/Portfolio-React.js/static/media/akash.45ea01cb697bb0604b9b.JPG",
+    "static/media/userform.jpg": "/Portfolio-React.js/static/media/userform.99d88978c7ac4c58c28b.jpg",
+    "static/media/To-do.jpg": "/Portfolio-React.js/static/media/To-do.55451a3467e448a16a91.jpg",
+    "static/media/game.png": "/Portfolio-React.js/static/media/game.b53ff8687f6ee28504c8.png",
+    "static/media/wave.png": "/Portfolio-React.js/static/media/wave.3eb14084bb52d95a8f4e.png",
+    "static/media/weather.jpg": "/Portfolio-React.js/static/media/weather.c410cae63b88079f189f.jpg",
+    "static/media/contacts-book.png": "/Portfolio-React.js/static/media/contacts-book.de3a44292f19f6eeb115.png",
+    "static/media/Calculator.jpg": "/Portfolio-React.js/static/media/Calculator.7ebe9ba703f29441a679.jpg",
+    "static/media/react-icon.png": "/Portfolio-React.js/static/media/react-icon.b7daa58ec8d8e12e59b3.png",
+    "index.html": "/Portfolio-React.js/index.html",
+    "main.0be9d56f.css.map": "/Portfolio-React.js/static/css/main.0be9d56f.css.map",
+    "main.5147a0aa.js.map": "/Portfolio-React.js/static/js/main.5147a0aa.js.map",
+    "453.235e154e.chunk.js.map": "/Portfolio-React.js/static/js/453.235e154e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0be9d56f.css",
+    "static/js/main.5147a0aa.js"
+  ]
+}
