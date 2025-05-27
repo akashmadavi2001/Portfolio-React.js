@@ -27,7 +27,7 @@ export default function About() {
         <h6>Nationality <span> : Indian</span></h6>
         <h6>Language <span> : English, Hindi</span></h6>
         <h6>Email I'd <span> : akashmadavi2001@gmail.com</span></h6>
-        <h6>Address <span> : Nagpur</span></h6>
+        <h6>City <span> : Nagpur</span></h6>
         <h6>Contact No <span> : 9021232883</span></h6>
       </div>
   }]
