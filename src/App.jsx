@@ -5,6 +5,7 @@ import Project from './Project/Project';
 import Home from './Home/Home';
 import Skills from './Skills/Skills';
 import About from './About/About';
+import { Link } from 'react-scroll';
 
 export default function App() {
     window.onscroll = () => {
@@ -13,13 +14,8 @@ export default function App() {
             let top = window.scrollY;
             let offset = sec.offsetTop - 500;
             let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
             if (top >= offset && top < offset + height) {
                 sec.classList.add('animation');
-                document.querySelectorAll('.header a').forEach(links => {
-                    links.classList.remove('active');
-                    document.querySelector('a[href*=' + id + ']')?.classList.add('active');
-                });
             }
             else {
                 sec.classList.remove('animation');
@@ -28,18 +24,20 @@ export default function App() {
     };
 
     const [mstatus, setmstatus] = useState(false);
+    const [click, setClick] = useState(false);
+    const closeMenu = () => setClick(false);
 
     return (
         <div className='background'>
             <header className='header'>
                 <h1>AKASH</h1>
                 <nav className={`listnav ${mstatus ? 'hidenav' : ''}`}>
-                    <ul>
-                        <li><a href='#home' className='active'>Home</a></li>
-                        <li><a href='#about' >About</a></li>
-                        <li><a href='#project' >Project</a></li>
-                        <li><a href='#skills'>Skills</a></li>
-                        <li><a href='#contact' >Contact</a></li>
+                    <ul className={click ? 'active' : ''}>
+                        <li><Link className='list' to='home' spy={true} smooth={true} offset={0} duration={0} onClick={closeMenu} >Home</Link></li>
+                        <li><Link className='list' to='about' spy={true} smooth={true} offset={0} duration={0} onClick={closeMenu}  >About</Link></li>
+                        <li><Link className='list' to='project' spy={true} smooth={true} offset={0} duration={0} onClick={closeMenu} >Project</Link></li>
+                        <li><Link className='list' to='skills' spy={true} smooth={true} offset={0} duration={0} onClick={closeMenu} >Skills</Link></li>
+                        <li><Link className='list' to='contact' spy={true} smooth={true} offset={0} duration={0} onClick={closeMenu} >Contact</Link></li>
                     </ul>
                 </nav>
 
