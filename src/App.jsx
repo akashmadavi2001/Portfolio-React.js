@@ -41,7 +41,7 @@ export default function App() {
                     </ul>
                 </nav>
 
-                <label htmlFor="checkbox"  >
+                <label htmlFor="checkbox">
                     <input type="checkbox" id='checkbox' className='checkbox' onClick={() => setmstatus(!mstatus)} />
                     <div className="toggle">
                         <span className="top-line common"></span>
