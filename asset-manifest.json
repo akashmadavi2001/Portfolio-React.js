@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React.js/static/css/main.0be9d56f.css",
-    "main.js": "/Portfolio-React.js/static/js/main.e4878777.js",
+    "main.css": "/Portfolio-React.js/static/css/main.769e5912.css",
+    "main.js": "/Portfolio-React.js/static/js/main.c84fbee2.js",
     "static/js/453.235e154e.chunk.js": "/Portfolio-React.js/static/js/453.235e154e.chunk.js",
     "static/media/Akash.png": "/Portfolio-React.js/static/media/Akash.3d15fadfe725ebdab98f.png",
     "static/media/project.jpg": "/Portfolio-React.js/static/media/project.2a9ed1400615ad082b3c.jpg",
@@ -12,15 +12,17 @@
     "static/media/wave.png": "/Portfolio-React.js/static/media/wave.3eb14084bb52d95a8f4e.png",
     "static/media/weather.jpg": "/Portfolio-React.js/static/media/weather.c410cae63b88079f189f.jpg",
     "static/media/contacts-book.png": "/Portfolio-React.js/static/media/contacts-book.de3a44292f19f6eeb115.png",
+    "static/media/spring-boot.png": "/Portfolio-React.js/static/media/spring-boot.97709211fecee0c057eb.png",
     "static/media/Calculator.jpg": "/Portfolio-React.js/static/media/Calculator.7ebe9ba703f29441a679.jpg",
+    "static/media/sql.png": "/Portfolio-React.js/static/media/sql.39a09c5b1535f23faa48.png",
     "static/media/react-icon.png": "/Portfolio-React.js/static/media/react-icon.b7daa58ec8d8e12e59b3.png",
     "index.html": "/Portfolio-React.js/index.html",
-    "main.0be9d56f.css.map": "/Portfolio-React.js/static/css/main.0be9d56f.css.map",
-    "main.e4878777.js.map": "/Portfolio-React.js/static/js/main.e4878777.js.map",
+    "main.769e5912.css.map": "/Portfolio-React.js/static/css/main.769e5912.css.map",
+    "main.c84fbee2.js.map": "/Portfolio-React.js/static/js/main.c84fbee2.js.map",
     "453.235e154e.chunk.js.map": "/Portfolio-React.js/static/js/453.235e154e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0be9d56f.css",
-    "static/js/main.e4878777.js"
+    "static/css/main.769e5912.css",
+    "static/js/main.c84fbee2.js"
   ]
 }
